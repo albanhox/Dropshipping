@@ -4,79 +4,110 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PawHaven — Clever Gear for Happier Pets</title>
-  <meta name="description" content="TikTok-famous pet essentials: grooming gloves, self-cleaning brushes, slow feeders and more. Free US shipping on every order." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <meta name="description" content="12 tested pet essentials: grooming, feeding, walks, play. Free US shipping and a 30-day guarantee on every order." />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
 </head>
 <body>
 
-  <div class="announcement">🚚 Free US shipping on every order &nbsp;·&nbsp; 30-day money-back guarantee</div>
+  <div class="announcement"><span>🚚 Free US shipping on every order</span><span class="dot">·</span><span>↩️ 30-day money-back guarantee</span></div>
 
-  <header class="site-header">
-    <a class="logo" href="#">🐾 <span>PawHaven</span></a>
+  <header class="site-header" id="top">
+    <a class="logo" href="#top"><span class="logo-mark">🐾</span><span class="logo-name">PawHaven</span></a>
     <nav>
       <a href="#products">Shop</a>
-      <a href="#why-us">Why Us</a>
+      <a href="#how">How It Works</a>
       <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="#products">Shop All →</a>
     </nav>
   </header>
 
   <section class="hero">
-    <div class="hero-inner">
-      <p class="hero-kicker">As seen all over your For You page</p>
-      <h1>Clever gear for happier pets<br /><em>(and cleaner homes)</em></h1>
-      <p class="hero-sub">We test the pet products going viral so you don't waste money on the ones that don't work. Every item ships free in the US and is covered by our 30-day guarantee.</p>
-      <a class="btn btn-primary" href="#products">Shop the collection</a>
-      <div class="hero-trust">
-        <span>⭐ 4.8/5 from happy pet parents</span>
-        <span>🔒 Secure checkout by Stripe</span>
-        <span>↩️ 30-day returns</span>
+    <div class="hero-copy">
+      <p class="hero-kicker">Pet essentials, ruthlessly curated</p>
+      <h1>Gear your pet will love.<br /><span class="accent">Clutter they won't miss.</span></h1>
+      <p class="hero-sub">Thousands of pet gadgets launch every year. We stock the twelve that actually earn their keep — for grooming days, dinner time, night walks and rainy-day boredom.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#products">Shop the collection</a>
+        <a class="btn btn-ghost" href="#how">How it works</a>
       </div>
+      <ul class="hero-trust">
+        <li><strong>Free</strong> US shipping</li>
+        <li><strong>30-day</strong> guarantee</li>
+        <li><strong>Stripe</strong> secure checkout</li>
+      </ul>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="hero-blob"></div>
+      <div class="hero-card hc-1"><img src="assets/img/grooming-glove.svg" alt="" /><span>Grooming Glove</span></div>
+      <div class="hero-card hc-2"><img src="assets/img/snuffle-mat.svg" alt="" /><span>Snuffle Mat</span></div>
+      <div class="hero-card hc-3"><img src="assets/img/led-collar.svg" alt="" /><span>LED Collar</span></div>
     </div>
   </section>
 
   <main>
     <section id="products" class="products-section">
-      <h2>The Collection</h2>
-      <p class="section-sub">Six products. Each one solves a real problem and each one demos itself in under two seconds.</p>
+      <div class="section-head">
+        <h2>The Collection</h2>
+        <p class="section-sub">Twelve products across four jobs. Each one solves a real problem — and proves it in seconds.</p>
+      </div>
+      <div class="filter-bar" id="filter-bar" role="tablist" aria-label="Filter products by category"></div>
       <div class="product-grid" id="product-grid"><!-- rendered by app.js --></div>
     </section>
 
-    <section id="why-us" class="why-section">
-      <h2>Why buy from PawHaven?</h2>
-      <div class="why-grid">
-        <div class="why-card"><div class="why-icon">🔍</div><h3>Tested picks only</h3><p>We stock six products, not six thousand. Each one earned its spot.</p></div>
-        <div class="why-card"><div class="why-icon">🚚</div><h3>Free tracked shipping</h3><p>Every order ships free within the US with full tracking, typically 7–12 days.</p></div>
-        <div class="why-card"><div class="why-icon">↩️</div><h3>30-day guarantee</h3><p>Not thrilled? Email us within 30 days for a refund. No forms, no fuss.</p></div>
-        <div class="why-card"><div class="why-icon">💬</div><h3>Real human support</h3><p>Questions answered within 24 hours by a person, not a bot.</p></div>
+    <section class="bundle-banner">
+      <div class="bundle-inner">
+        <div>
+          <p class="bundle-kicker">Most popular combo</p>
+          <h2>The Shedding Season Kit</h2>
+          <p>Grooming glove + self-cleaning brush + hair roller. Everything shedding season throws at you, handled — and cheaper together.</p>
+        </div>
+        <div class="bundle-cta">
+          <div class="bundle-price"><span class="price">$44.99</span><span class="compare-at">$56.97 separately</span></div>
+          <a class="btn btn-light" id="bundle-btn" href="#products">Coming soon</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="how-section">
+      <div class="section-head">
+        <h2>How it works</h2>
+        <p class="section-sub">Small shop, simple promises.</p>
+      </div>
+      <div class="how-grid">
+        <div class="how-card"><span class="how-num">1</span><h3>Order in 60 seconds</h3><p>Checkout is handled by Stripe — the same processor behind Amazon and Google. Apple&nbsp;Pay and Google&nbsp;Pay included. We never see your card.</p></div>
+        <div class="how-card"><span class="how-num">2</span><h3>Ships free, tracked</h3><p>Every order ships within 1–2 business days with free tracked US delivery, typically arriving in 7–12 days.</p></div>
+        <div class="how-card"><span class="how-num">3</span><h3>Love it or refund it</h3><p>Not thrilled within 30 days? One email, full refund. For orders under $30 we usually don't even ask for the item back.</p></div>
       </div>
     </section>
 
     <section id="faq" class="faq-section">
-      <h2>Frequently asked questions</h2>
-      <details><summary>How long does shipping take?</summary><p>Orders are processed within 1–2 business days and arrive in 7–12 business days with free tracked US shipping. You'll get a tracking number by email as soon as your order ships.</p></details>
-      <details><summary>What's your return policy?</summary><p>If you're not happy within 30 days of delivery, email us and we'll refund you. For orders under $30 we usually don't even ask you to ship it back.</p></details>
-      <details><summary>Is checkout secure?</summary><p>Yes — payments are processed by Stripe, the same processor used by Amazon and Google. We never see or store your card details.</p></details>
-      <details><summary>Will this work for my cat / large dog / senior pet?</summary><p>Product pages list sizing and suitability details. Not sure? Email us with your pet's breed and we'll give you a straight answer — including "don't buy this one."</p></details>
+      <div class="section-head"><h2>Questions, answered</h2></div>
+      <div class="faq-list">
+        <details><summary>How long does shipping take?<span class="chev">›</span></summary><p>Orders are processed within 1–2 business days and arrive in 7–12 business days with free tracked US shipping. You'll get a tracking number by email as soon as your order ships.</p></details>
+        <details><summary>What's your return policy?<span class="chev">›</span></summary><p>If you're not happy within 30 days of delivery, email us and we'll refund you. For orders under $30 we usually don't even ask you to ship it back.</p></details>
+        <details><summary>Is checkout secure?<span class="chev">›</span></summary><p>Yes — payments are processed by Stripe. We never see or store your card details, and every page is served over HTTPS.</p></details>
+        <details><summary>Will this work for my cat / large dog / senior pet?<span class="chev">›</span></summary><p>Product pages list sizing and suitability. Not sure? Email us with your pet's breed and we'll give you a straight answer — including "don't buy this one."</p></details>
+      </div>
     </section>
 
     <section class="email-section">
-      <h2>Get 10% off your first order</h2>
-      <p>Join the list for launch discounts and one genuinely useful pet tip per week. No spam, ever.</p>
-      <!-- Create a free form at formspree.io and paste your endpoint below -->
-      <form class="email-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <input type="email" name="email" placeholder="you@email.com" required />
-        <button class="btn btn-primary" type="submit">Get my 10% off</button>
-      </form>
+      <div class="email-inner">
+        <h2>Get 10% off your first order</h2>
+        <p>Launch discounts plus one genuinely useful pet tip a week. No spam, unsubscribe anytime.</p>
+        <!-- Create a free form at formspree.io and paste your endpoint below -->
+        <form class="email-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="email" name="email" placeholder="you@email.com" required aria-label="Email address" />
+          <button class="btn btn-primary" type="submit">Get my 10% off</button>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 PawHaven · <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
-    <p class="footer-fine">30-day money-back guarantee · Free US shipping · Secure checkout by Stripe</p>
+    <div class="footer-brand">🐾 <strong>PawHaven</strong></div>
+    <p><a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+    <p class="footer-fine">© 2026 PawHaven · Free US shipping · 30-day money-back guarantee · Secure checkout by Stripe</p>
   </footer>
 
   <!-- Product detail modal -->

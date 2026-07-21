@@ -1,8 +1,9 @@
-// Renders the product grid and detail modal from products.js.
-// No build step, no dependencies — works on GitHub Pages as-is.
+// Renders the filter bar, product grid and detail modal from products.js.
+// No build step, no dependencies, no external requests.
 
 (function () {
   const grid = document.getElementById("product-grid");
+  const filterBar = document.getElementById("filter-bar");
   const backdrop = document.getElementById("modal-backdrop");
   const modal = document.getElementById("modal");
 
@@ -11,10 +12,14 @@
 
   function mediaHTML(p) {
     const badge = p.badge ? `<span class="product-badge">${p.badge}</span>` : "";
-    const inner = p.image
-      ? `<img src="${p.image}" alt="${p.name}" loading="lazy" />`
-      : `<span aria-hidden="true">${p.emoji}</span>`;
-    return `<div class="product-media">${badge}${inner}</div>`;
+    return `<div class="product-media">${badge}<span class="product-cat">${p.category}</span><img src="${p.image}" alt="${p.name}" loading="lazy" /></div>`;
+  }
+
+  function ratingHTML(p) {
+    // Only rendered when real supplier ratings are filled in (see products.js).
+    if (!p.rating || !p.ratingCount) return "";
+    const stars = "★".repeat(Math.round(p.rating)) + "☆".repeat(5 - Math.round(p.rating));
+    return `<div class="product-rating">${stars} ${p.rating.toFixed(1)} <span class="count">(${p.ratingCount.toLocaleString()})</span></div>`;
   }
 
   function buyButtonHTML(p) {
@@ -34,25 +39,54 @@
       </div>`;
   }
 
-  grid.innerHTML = PRODUCTS.map(
-    (p) => `
+  function cardHTML(p) {
+    return `
     <article class="product-card" data-id="${p.id}" tabindex="0" role="button" aria-label="View ${p.name}">
       ${mediaHTML(p)}
       <div class="product-body">
         <h3>${p.name}</h3>
+        ${ratingHTML(p)}
         <p class="product-short">${p.short}</p>
         ${pricingHTML(p)}
         ${buyButtonHTML(p)}
       </div>
-    </article>`
-  ).join("");
+    </article>`;
+  }
 
+  // --- category filter ---
+  const categories = ["All", ...new Set(PRODUCTS.map((p) => p.category))];
+  let activeCat = "All";
+
+  function renderFilters() {
+    filterBar.innerHTML = categories
+      .map((c) => `<button class="filter-chip${c === activeCat ? " active" : ""}" data-cat="${c}">${c}</button>`)
+      .join("");
+  }
+
+  function renderGrid() {
+    const list = activeCat === "All" ? PRODUCTS : PRODUCTS.filter((p) => p.category === activeCat);
+    grid.innerHTML = list.map(cardHTML).join("");
+  }
+
+  filterBar.addEventListener("click", (e) => {
+    const chip = e.target.closest(".filter-chip");
+    if (!chip) return;
+    activeCat = chip.dataset.cat;
+    renderFilters();
+    renderGrid();
+  });
+
+  renderFilters();
+  renderGrid();
+
+  // --- modal ---
   function openModal(p) {
     modal.innerHTML = `
       <button class="modal-close" aria-label="Close">✕</button>
       ${mediaHTML(p)}
       <div class="modal-content">
         <h3>${p.name}</h3>
+        ${ratingHTML(p)}
         ${pricingHTML(p)}
         <p class="modal-desc">${p.description}</p>
         <ul>${p.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>
@@ -87,5 +121,15 @@
     if (e.key === "Escape" && !backdrop.hidden) closeModal();
   });
 
-  document.querySelector(".logo span").textContent = STORE.name;
+  // Bundle button: activates when a BUNDLE Stripe link is set below.
+  const BUNDLE_STRIPE_LINK = "PASTE_STRIPE_PAYMENT_LINK"; // create one Payment Link at $44.99 for the 3-item kit
+  const bundleBtn = document.getElementById("bundle-btn");
+  if (bundleBtn && !BUNDLE_STRIPE_LINK.startsWith("PASTE_")) {
+    bundleBtn.textContent = "Get the kit — $44.99";
+    bundleBtn.href = BUNDLE_STRIPE_LINK;
+    bundleBtn.target = "_blank";
+    bundleBtn.rel = "noopener";
+  }
+
+  document.querySelector(".logo-name").textContent = STORE.name;
 })();
