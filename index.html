@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PawHaven — Clever Gear for Happier Pets</title>
+  <meta name="description" content="TikTok-famous pet essentials: grooming gloves, self-cleaning brushes, slow feeders and more. Free US shipping on every order." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+</head>
+<body>
+
+  <div class="announcement">🚚 Free US shipping on every order &nbsp;·&nbsp; 30-day money-back guarantee</div>
+
+  <header class="site-header">
+    <a class="logo" href="#">🐾 <span>PawHaven</span></a>
+    <nav>
+      <a href="#products">Shop</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-kicker">As seen all over your For You page</p>
+      <h1>Clever gear for happier pets<br /><em>(and cleaner homes)</em></h1>
+      <p class="hero-sub">We test the pet products going viral so you don't waste money on the ones that don't work. Every item ships free in the US and is covered by our 30-day guarantee.</p>
+      <a class="btn btn-primary" href="#products">Shop the collection</a>
+      <div class="hero-trust">
+        <span>⭐ 4.8/5 from happy pet parents</span>
+        <span>🔒 Secure checkout by Stripe</span>
+        <span>↩️ 30-day returns</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="products" class="products-section">
+      <h2>The Collection</h2>
+      <p class="section-sub">Six products. Each one solves a real problem and each one demos itself in under two seconds.</p>
+      <div class="product-grid" id="product-grid"><!-- rendered by app.js --></div>
+    </section>
+
+    <section id="why-us" class="why-section">
+      <h2>Why buy from PawHaven?</h2>
+      <div class="why-grid">
+        <div class="why-card"><div class="why-icon">🔍</div><h3>Tested picks only</h3><p>We stock six products, not six thousand. Each one earned its spot.</p></div>
+        <div class="why-card"><div class="why-icon">🚚</div><h3>Free tracked shipping</h3><p>Every order ships free within the US with full tracking, typically 7–12 days.</p></div>
+        <div class="why-card"><div class="why-icon">↩️</div><h3>30-day guarantee</h3><p>Not thrilled? Email us within 30 days for a refund. No forms, no fuss.</p></div>
+        <div class="why-card"><div class="why-icon">💬</div><h3>Real human support</h3><p>Questions answered within 24 hours by a person, not a bot.</p></div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+      <h2>Frequently asked questions</h2>
+      <details><summary>How long does shipping take?</summary><p>Orders are processed within 1–2 business days and arrive in 7–12 business days with free tracked US shipping. You'll get a tracking number by email as soon as your order ships.</p></details>
+      <details><summary>What's your return policy?</summary><p>If you're not happy within 30 days of delivery, email us and we'll refund you. For orders under $30 we usually don't even ask you to ship it back.</p></details>
+      <details><summary>Is checkout secure?</summary><p>Yes — payments are processed by Stripe, the same processor used by Amazon and Google. We never see or store your card details.</p></details>
+      <details><summary>Will this work for my cat / large dog / senior pet?</summary><p>Product pages list sizing and suitability details. Not sure? Email us with your pet's breed and we'll give you a straight answer — including "don't buy this one."</p></details>
+    </section>
+
+    <section class="email-section">
+      <h2>Get 10% off your first order</h2>
+      <p>Join the list for launch discounts and one genuinely useful pet tip per week. No spam, ever.</p>
+      <!-- Create a free form at formspree.io and paste your endpoint below -->
+      <form class="email-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="email" name="email" placeholder="you@email.com" required />
+        <button class="btn btn-primary" type="submit">Get my 10% off</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 PawHaven · <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+    <p class="footer-fine">30-day money-back guarantee · Free US shipping · Secure checkout by Stripe</p>
+  </footer>
+
+  <!-- Product detail modal -->
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" id="modal"><!-- rendered by app.js --></div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
