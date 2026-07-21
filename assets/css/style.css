@@ -224,7 +224,14 @@ main section { padding: clamp(48px, 6.5vw, 92px) clamp(16px, 5vw, 72px); }
 .modal-backdrop[hidden] { display: none; }
 .modal-backdrop { position: fixed; inset: 0; background: rgba(34, 33, 29, 0.55); display: grid; place-items: center; padding: 20px; z-index: 100; }
 .modal { background: var(--surface); border-radius: var(--radius); max-width: 840px; width: 100%; max-height: 90vh; overflow-y: auto; display: grid; grid-template-columns: 1fr 1fr; position: relative; }
-.modal .product-media { aspect-ratio: auto; min-height: 340px; }
+.modal-gallery { display: flex; flex-direction: column; }
+.modal .product-media { aspect-ratio: 1 / 1; }
+.modal .modal-main img { object-fit: cover; }
+.modal-thumbs { display: flex; gap: 8px; padding: 12px; flex-wrap: wrap; }
+.modal-thumb { width: 64px; height: 64px; border-radius: 10px; overflow: hidden; border: 2px solid var(--line); background: #fff; cursor: pointer; padding: 0; transition: border-color 0.15s; }
+.modal-thumb.active { border-color: var(--green); }
+.modal-thumb:hover { border-color: var(--terra); }
+.modal-thumb img { width: 100%; height: 100%; object-fit: cover; }
 .modal-content { padding: 34px; display: flex; flex-direction: column; gap: 14px; }
 .modal-content h3 { font-size: 1.5rem; font-weight: 800; }
 .modal-content ul { padding-left: 20px; color: var(--ink-soft); font-size: 0.95rem; }

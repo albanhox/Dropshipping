@@ -10,13 +10,34 @@
   const money = (n) => STORE.currency + n.toFixed(2);
   const hasLink = (p) => p.stripeLink && !p.stripeLink.startsWith("PASTE_");
 
-  function mediaHTML(p) {
-    const badge = p.badge ? `<span class="product-badge">${p.badge}</span>` : "";
-    // If a remote supplier photo fails to load, fall back to the local illustration.
-    const fallback = p.imageFallback && p.imageFallback !== p.image
+  function fallbackAttr(p) {
+    // If a remote/photo source fails to load, fall back to the local illustration.
+    return p.imageFallback && p.imageFallback !== p.image
       ? ` onerror="this.onerror=null;this.src='${p.imageFallback}'"`
       : "";
-    return `<div class="product-media">${badge}<span class="product-cat">${p.category}</span><img src="${p.image}" alt="${p.name}" loading="lazy"${fallback} /></div>`;
+  }
+
+  function mediaHTML(p) {
+    const badge = p.badge ? `<span class="product-badge">${p.badge}</span>` : "";
+    return `<div class="product-media">${badge}<span class="product-cat">${p.category}</span><img src="${p.image}" alt="${p.name}" loading="lazy"${fallbackAttr(p)} /></div>`;
+  }
+
+  function galleryImages(p) {
+    return p.gallery && p.gallery.length ? p.gallery : [p.image];
+  }
+
+  function galleryHTML(p) {
+    const imgs = galleryImages(p);
+    const badge = p.badge ? `<span class="product-badge">${p.badge}</span>` : "";
+    const thumbs = imgs.length > 1
+      ? `<div class="modal-thumbs">${imgs.map((src, i) =>
+          `<button class="modal-thumb${i === 0 ? " active" : ""}" data-src="${src}" aria-label="View image ${i + 1}"><img src="${src}" alt="" loading="lazy" /></button>`
+        ).join("")}</div>`
+      : "";
+    return `<div class="modal-gallery">
+      <div class="product-media modal-main">${badge}<span class="product-cat">${p.category}</span><img id="modal-main-img" src="${imgs[0]}" alt="${p.name}"${fallbackAttr(p)} /></div>
+      ${thumbs}
+    </div>`;
   }
 
   function ratingHTML(p) {
@@ -90,7 +111,7 @@
   function openModal(p) {
     modal.innerHTML = `
       <button class="modal-close" aria-label="Close">✕</button>
-      ${mediaHTML(p)}
+      ${galleryHTML(p)}
       <div class="modal-content">
         <h3>${p.name}</h3>
         ${ratingHTML(p)}
@@ -123,6 +144,12 @@
 
   backdrop.addEventListener("click", (e) => {
     if (e.target === backdrop || e.target.closest(".modal-close")) closeModal();
+    const thumb = e.target.closest(".modal-thumb");
+    if (thumb) {
+      const main = document.getElementById("modal-main-img");
+      if (main) main.src = thumb.dataset.src;
+      modal.querySelectorAll(".modal-thumb").forEach((t) => t.classList.toggle("active", t === thumb));
+    }
   });
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && !backdrop.hidden) closeModal();
