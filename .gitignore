@@ -1,0 +1,4 @@
+
+# never commit secrets
+*.gemini_key
+.gemini_key
