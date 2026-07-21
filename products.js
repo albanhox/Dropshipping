@@ -36,7 +36,7 @@ const PRODUCTS = [
     short: "Brush, de-shed and massage in one — hair peels off in a single sheet.",
     description: "Soft silicone tips remove loose fur while you pet. Works on dogs and cats, long or short hair. Shed hair sticks to the glove and peels off in one satisfying sheet.",
     bullets: ["Gentle enough for daily use — most pets think it's petting", "Machine-washable, one size fits all", "Free US shipping, 7–12 day delivery"],
-    stripeLink: "PASTE_STRIPE_PAYMENT_LINK",
+    stripeLink: "https://buy.stripe.com/00w9ATa77asU0Bx7bJ4ow00",
   },
   {
     id: "self-cleaning-brush",
@@ -49,7 +49,7 @@ const PRODUCTS = [
     short: "One click retracts the bristles — collected fur falls right off.",
     description: "Fine bent-wire bristles reach the undercoat without scratching skin. Press the button when done: bristles retract and the fur drops off in one pad.",
     bullets: ["Push-button self-cleaning mechanism", "Rounded tips, safe for sensitive skin", "Free US shipping, 7–12 day delivery"],
-    stripeLink: "PASTE_STRIPE_PAYMENT_LINK",
+    stripeLink: "https://buy.stripe.com/00w8wP4MN0Skesn7bJ4ow01",
   },
   {
     id: "nail-grinder",
@@ -62,7 +62,7 @@ const PRODUCTS = [
     short: "USB-rechargeable, low-vibration — trims nails without the clipper panic.",
     description: "Diamond-bit grinder files nails smoothly instead of squeezing them. Low noise and vibration keep anxious pets calm. Two speeds, three port sizes for small to large breeds.",
     bullets: ["Quieter than standard grinders — under 40db", "USB-C rechargeable, 6hr runtime", "Free US shipping, 7–12 day delivery"],
-    stripeLink: "PASTE_STRIPE_PAYMENT_LINK",
+    stripeLink: "https://buy.stripe.com/cNidR91AB9oQckfgMj4ow02",
   },
   {
     id: "slow-feeder",
@@ -75,7 +75,7 @@ const PRODUCTS = [
     short: "Maze design slows fast eaters by up to 10x — better digestion, less bloat.",
     description: "Vets recommend slow feeders for dogs that inhale their food. The maze pattern turns mealtime into a puzzle, reducing bloat, vomiting and boredom. Non-slip base.",
     bullets: ["Food-grade, dishwasher-safe material", "Non-slip rubber base", "Free US shipping, 7–12 day delivery"],
-    stripeLink: "PASTE_STRIPE_PAYMENT_LINK",
+    stripeLink: "https://buy.stripe.com/dRmdR97YZbwY5VR7bJ4ow03",
   },
   {
     id: "lick-mat",
@@ -88,7 +88,7 @@ const PRODUCTS = [
     short: "Spread peanut butter, buy yourself 20 calm minutes. Bath-time hack included.",
     description: "Licking is naturally soothing for dogs and cats. Textured surface holds spreads and slows them down — suction backing sticks to the bathtub wall for stress-free wash time.",
     bullets: ["Two textures, dishwasher safe", "Suction backing sticks to tubs and floors", "Free US shipping, 7–12 day delivery"],
-    stripeLink: "PASTE_STRIPE_PAYMENT_LINK",
+    stripeLink: "https://buy.stripe.com/fZufZhdjj0Sk2JF0Nl4ow04",
   },
   {
     id: "water-bottle",
@@ -101,7 +101,7 @@ const PRODUCTS = [
     short: "One-hand press fills the trough; unused water drains back. No more cupped hands.",
     description: "Leak-proof bottle with a built-in drinking trough. Press to fill, release to drain the extra back in — nothing wasted, nothing spilled in your bag.",
     bullets: ["19oz, leak-proof lock switch", "Food-grade, BPA-free", "Free US shipping, 7–12 day delivery"],
-    stripeLink: "PASTE_STRIPE_PAYMENT_LINK",
+    stripeLink: "https://buy.stripe.com/8x23cv3IJ44w3NJ2Vt4ow05",
   },
   {
     id: "led-collar",
@@ -114,7 +114,7 @@ const PRODUCTS = [
     short: "Makes your dog visible from 500m on night walks. Charges via USB.",
     description: "Three light modes keep your dog visible to cars and cyclists after dark. A 15-minute charge lasts up to 8 hours. Cuttable strip fits any neck size.",
     bullets: ["Visible up to 500m at night", "USB rechargeable — no coin batteries", "Free US shipping, 7–12 day delivery"],
-    stripeLink: "PASTE_STRIPE_PAYMENT_LINK",
+    stripeLink: "https://buy.stripe.com/aFabJ13IJasU9830Nl4ow06",
   },
   {
     id: "seatbelt-tether",
@@ -127,7 +127,7 @@ const PRODUCTS = [
     short: "Clips into any seatbelt buckle — keeps your co-pilot safe and off your lap.",
     description: "Heavy-duty nylon tether clicks into the standard seatbelt receiver and clips to any harness. Elastic buffer absorbs sudden stops. Adjustable 21–30 inches.",
     bullets: ["Fits standard seatbelt buckles", "Use with a harness, never a collar", "Free US shipping, 7–12 day delivery"],
-    stripeLink: "PASTE_STRIPE_PAYMENT_LINK",
+    stripeLink: "https://buy.stripe.com/cNifZh6UVbwYfwr53B4ow07",
   },
   {
     id: "paw-cleaner",
@@ -140,7 +140,7 @@ const PRODUCTS = [
     short: "Dunk, twist, done — muddy paws cleaned at the door in seconds.",
     description: "Soft silicone bristles inside a spill-resistant cup. Add a little water, dip each paw, twist gently — mud stays in the cup, not on your floors.",
     bullets: ["Gentle silicone bristles", "Splits apart for easy rinsing", "Free US shipping, 7–12 day delivery"],
-    stripeLink: "PASTE_STRIPE_PAYMENT_LINK",
+    stripeLink: "https://buy.stripe.com/eVqcN5gvv1Wo0BxbrZ4ow08",
   },
   {
     id: "hair-roller",
@@ -153,7 +153,7 @@ const PRODUCTS = [
     short: "Rolls fur off sofas and car seats — no refills, empties with one click.",
     description: "Roll back and forth over fabric and the chamber traps the hair; open the lid, dump it out, done. Nothing to replace, ever.",
     bullets: ["100% reusable — no sticky refills", "Works on sofas, beds, car seats, clothes", "Free US shipping, 7–12 day delivery"],
-    stripeLink: "PASTE_STRIPE_PAYMENT_LINK",
+    stripeLink: "https://buy.stripe.com/28E28rfrr1Wo5VRbrZ4ow09",
   },
   {
     id: "snuffle-mat",
@@ -166,7 +166,7 @@ const PRODUCTS = [
     short: "Hides treats in fleece folds — 15 minutes of sniffing tires a dog like an hour of walking.",
     description: "Scatter kibble into the fleece folds and let your dog forage. Nosework is deeply tiring for dogs — trainers use snuffle mats to calm anxious and high-energy pups.",
     bullets: ["Great for anxious or high-energy dogs", "Machine washable, non-slip backing", "Free US shipping, 7–12 day delivery"],
-    stripeLink: "PASTE_STRIPE_PAYMENT_LINK",
+    stripeLink: "https://buy.stripe.com/bJefZha777gIbgbeEb4ow0a",
   },
   {
     id: "cat-teaser",
@@ -179,6 +179,6 @@ const PRODUCTS = [
     short: "Telescoping wand + 5 swap-on feather lures. Indoor cats' favorite cardio.",
     description: "Extends to 39 inches so you can play from the couch. Five interchangeable lures (feathers, worm, fish) keep the hunt fresh — rotation is the secret to a cat that never gets bored of it.",
     bullets: ["Telescopes from 15 to 39 inches", "5 replaceable lures included", "Free US shipping, 7–12 day delivery"],
-    stripeLink: "PASTE_STRIPE_PAYMENT_LINK",
+    stripeLink: "https://buy.stripe.com/5kQ7sLdjj0Sk98367F4ow0b",
   },
 ];

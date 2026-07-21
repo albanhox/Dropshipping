@@ -122,7 +122,7 @@
   });
 
   // Bundle button: activates when a BUNDLE Stripe link is set below.
-  const BUNDLE_STRIPE_LINK = "PASTE_STRIPE_PAYMENT_LINK"; // create one Payment Link at $44.99 for the 3-item kit
+  const BUNDLE_STRIPE_LINK = "https://buy.stripe.com/3cIaEX6UVbwY5VR7bJ4ow0c"; // create one Payment Link at $44.99 for the 3-item kit
   const bundleBtn = document.getElementById("bundle-btn");
   if (bundleBtn && !BUNDLE_STRIPE_LINK.startsWith("PASTE_")) {
     bundleBtn.textContent = "Get the kit — $44.99";
