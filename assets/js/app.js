@@ -98,7 +98,7 @@
         <p class="modal-desc">${p.description}</p>
         <ul>${p.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>
         ${buyButtonHTML(p)}
-        <p class="modal-guarantee">🔒 Secure Stripe checkout · 🚚 Free US shipping · ↩️ 30-day guarantee</p>
+        <p class="modal-guarantee">🔒 Secure Stripe checkout · 🚚 <a href="policies.html#shipping">Free US shipping</a> · ↩️ <a href="policies.html#returns">30-day guarantee</a></p>
       </div>`;
     backdrop.hidden = false;
     document.body.style.overflow = "hidden";
