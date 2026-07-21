@@ -12,7 +12,11 @@
 
   function mediaHTML(p) {
     const badge = p.badge ? `<span class="product-badge">${p.badge}</span>` : "";
-    return `<div class="product-media">${badge}<span class="product-cat">${p.category}</span><img src="${p.image}" alt="${p.name}" loading="lazy" /></div>`;
+    // If a remote supplier photo fails to load, fall back to the local illustration.
+    const fallback = p.imageFallback && p.imageFallback !== p.image
+      ? ` onerror="this.onerror=null;this.src='${p.imageFallback}'"`
+      : "";
+    return `<div class="product-media">${badge}<span class="product-cat">${p.category}</span><img src="${p.image}" alt="${p.name}" loading="lazy"${fallback} /></div>`;
   }
 
   function ratingHTML(p) {
@@ -53,8 +57,11 @@
     </article>`;
   }
 
+  // Only show products that are active (in stock with a verified supplier).
+  const CATALOG = PRODUCTS.filter((p) => p.active !== false);
+
   // --- category filter ---
-  const categories = ["All", ...new Set(PRODUCTS.map((p) => p.category))];
+  const categories = ["All", ...new Set(CATALOG.map((p) => p.category))];
   let activeCat = "All";
 
   function renderFilters() {
@@ -64,7 +71,7 @@
   }
 
   function renderGrid() {
-    const list = activeCat === "All" ? PRODUCTS : PRODUCTS.filter((p) => p.category === activeCat);
+    const list = activeCat === "All" ? CATALOG : CATALOG.filter((p) => p.category === activeCat);
     grid.innerHTML = list.map(cardHTML).join("");
   }
 
