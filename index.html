@@ -27,34 +27,44 @@
 
   <section class="hero">
     <div class="hero-copy">
-      <p class="hero-kicker">Pet essentials, ruthlessly curated</p>
-      <h1>Gear your pet will love.<br /><span class="accent">Clutter they won't miss.</span></h1>
-      <p class="hero-sub">Thousands of pet gadgets launch every year. We stock the twelve that actually earn their keep — for grooming days, dinner time, night walks and rainy-day boredom.</p>
+      <p class="hero-kicker">🐾 Pet essentials, ruthlessly curated</p>
+      <h1>Happy pet.<br /><em>Tidy house.</em><br />Both, actually.</h1>
+      <p class="hero-sub">Thousands of pet gadgets launch every year. We stock only the ones that earn their keep — for grooming days, dinner time, night walks and rainy-day boredom.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#products">Shop the collection</a>
-        <a class="btn btn-ghost" href="#how">How it works</a>
+        <a class="btn btn-primary btn-lg" href="#products">Shop the collection</a>
+        <a class="btn btn-ghost" href="#bestseller">Meet our #1 seller</a>
       </div>
-      <ul class="hero-trust">
-        <li><strong>Free</strong> US shipping</li>
-        <li><strong>30-day</strong> guarantee</li>
-        <li><strong>Stripe</strong> secure checkout</li>
-      </ul>
     </div>
     <div class="hero-art">
-      <figure class="hero-photo">
-        <img src="https://oss-cf.cjdropshipping.com/product/2025/05/26/06/6b2a1028-7824-48d5-ab95-a342d69ec7cc.jpg"
-             alt="5-Finger Pet Grooming Glove"
-             onerror="this.onerror=null;this.src='assets/img/grooming-glove.svg'" />
-        <figcaption class="hero-photo-tag">⭐ Best seller — ships from our US warehouse in 3–8 days</figcaption>
-      </figure>
+      <div class="collage">
+        <figure class="collage-item ci-main">
+          <img src="https://oss-cf.cjdropshipping.com/product/2025/05/26/06/6b2a1028-7824-48d5-ab95-a342d69ec7cc.jpg" alt="Pet grooming glove" onerror="this.onerror=null;this.src='assets/img/grooming-glove.svg'" />
+        </figure>
+        <figure class="collage-item ci-top">
+          <img src="https://cf.cjdropshipping.com/15576768/576989341406.jpg" alt="Snuffle mat" onerror="this.onerror=null;this.src='assets/img/snuffle-mat.svg'" />
+        </figure>
+        <figure class="collage-item ci-bottom">
+          <img src="https://cf.cjdropshipping.com/16986240/1718893321465761792.jpg" alt="Pet hair roller" onerror="this.onerror=null;this.src='assets/img/hair-roller.svg'" />
+        </figure>
+        <div class="collage-sticker">Ships free<br />in the US 🇺🇸</div>
+      </div>
     </div>
   </section>
 
-  <div class="trust-strip">
-    <span class="pay-label">Secure checkout with</span>
-    <span class="pay-chip">Visa</span><span class="pay-chip">Mastercard</span><span class="pay-chip">Amex</span><span class="pay-chip">Discover</span><span class="pay-chip"> Pay</span><span class="pay-chip">G&nbsp;Pay</span>
-    <span class="pay-label">· powered by <strong>Stripe</strong></span>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Free US shipping ✦ 30-day money-back guarantee ✦ Ships in 1–2 business days ✦ Secure Stripe checkout ✦ Real human support ✦ </span><span>Free US shipping ✦ 30-day money-back guarantee ✦ Ships in 1–2 business days ✦ Secure Stripe checkout ✦ Real human support ✦ </span>
+    </div>
   </div>
+
+  <section class="needs-section">
+    <div class="needs-grid">
+      <a class="need-tile nt-grooming" href="#products" data-cat="Grooming"><span class="need-emoji">🧤</span><h3>Shedding season</h3><p>Gloves, brushes &amp; fur rescue</p></a>
+      <a class="need-tile nt-feeding" href="#products" data-cat="Feeding"><span class="need-emoji">🥣</span><h3>Dinner time</h3><p>Slow feeders for fast eaters</p></a>
+      <a class="need-tile nt-walks" href="#products" data-cat="Walks"><span class="need-emoji">🌙</span><h3>Out &amp; about</h3><p>Night walks, car rides, hydration</p></a>
+      <a class="need-tile nt-play" href="#products" data-cat="Play"><span class="need-emoji">🎾</span><h3>Boredom busters</h3><p>Enrichment for rainy days</p></a>
+    </div>
+  </section>
 
   <main>
     <section id="products" class="products-section">
@@ -64,6 +74,10 @@
       </div>
       <div class="filter-bar" id="filter-bar" role="tablist" aria-label="Filter products by category"></div>
       <div class="product-grid" id="product-grid"><!-- rendered by app.js --></div>
+    </section>
+
+    <section id="bestseller" class="spotlight-section">
+      <div class="spotlight" id="spotlight"><!-- rendered by app.js --></div>
     </section>
 
     <section class="bundle-banner">

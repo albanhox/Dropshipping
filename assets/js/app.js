@@ -128,6 +128,41 @@
     if (e.key === "Escape" && !backdrop.hidden) closeModal();
   });
 
+  // --- best-seller spotlight ---
+  const spotlight = document.getElementById("spotlight");
+  const star = CATALOG.find((p) => p.id === "grooming-glove");
+  if (spotlight && star) {
+    spotlight.innerHTML = `
+      <div class="spotlight-media">
+        <img src="${star.image}" alt="${star.name}" onerror="this.onerror=null;this.src='${star.imageFallback}'" />
+        <span class="spotlight-flag">⭐ #1 Best Seller</span>
+      </div>
+      <div class="spotlight-body">
+        <p class="spotlight-kicker">Meet the fan favorite</p>
+        <h2>${star.name}</h2>
+        <p class="spotlight-desc">${star.description}</p>
+        <ul class="spotlight-list">
+          <li>🇺🇸 Ships from our <strong>US warehouse</strong> — arrives in 3–8 days</li>
+          <li>🧤 ${star.bullets[0]}</li>
+          <li>🧼 ${star.bullets[1]}</li>
+        </ul>
+        ${pricingHTML(star)}
+        ${buyButtonHTML(star)}
+        <p class="modal-guarantee">↩️ 30-day money-back guarantee — if your pet hates it, full refund.</p>
+      </div>`;
+  }
+
+  // --- "shop by need" tiles drive the category filter ---
+  document.querySelectorAll(".need-tile").forEach((tile) => {
+    tile.addEventListener("click", () => {
+      const cat = tile.dataset.cat;
+      if (!categories.includes(cat)) return;
+      activeCat = cat;
+      renderFilters();
+      renderGrid();
+    });
+  });
+
   // Bundle button: activates when a BUNDLE Stripe link is set below.
   const BUNDLE_STRIPE_LINK = "https://buy.stripe.com/3cIaEX6UVbwY5VR7bJ4ow0c"; // create one Payment Link at $44.99 for the 3-item kit
   const bundleBtn = document.getElementById("bundle-btn");
