@@ -13,7 +13,7 @@ A deploy workflow is already included (`.github/workflows/deploy-pages.yml`). Gi
 
 ## Option B: Vercel or Netlify (free, nicer URLs)
 
-Import the repo at vercel.com or netlify.com → framework preset "Other" → deploy. You get `pawhaven.vercel.app`-style URLs and can attach a custom domain later with a couple of clicks.
+Import the repo at vercel.com or netlify.com → framework preset "Other" → deploy. You get `tuftandtail.vercel.app`-style URLs and can attach a custom domain later with a couple of clicks.
 
 ## Editing the store
 

@@ -2,7 +2,7 @@
 
 Everything below is ready to use. Your only job is to film the clips (phone, natural light, 15–30 seconds) and paste the text.
 
-## Social bios (all platforms, handle: @pawhavenshop)
+## Social bios (all platforms, handle: @tuftandtail)
 
 > 🐾 Pet gear that actually works — we test the viral stuff so you don't have to
 > 🚚 Free US shipping · 30-day guarantee
@@ -72,7 +72,7 @@ Reply template for "is this available?": "Yes! I ship it free with tracking — 
 
 ## Micro-creator DM (send to 10 pet accounts, 1k–20k followers)
 
-> Hey! Love your content with [pet's name] 🐾 I run a small pet gear store (PawHaven) and I think [he/she] would be perfect for our [grooming glove / snuffle mat]. Can I send you one free? No strings — if you like it and want to post, I'll set you up with a personal 15% code for your followers and pay you 15% of every sale it drives. Either way you keep the product!
+> Hey! Love your content with [pet's name] 🐾 I run a small pet gear store (Tuft & Tail) and I think [he/she] would be perfect for our [grooming glove / snuffle mat]. Can I send you one free? No strings — if you like it and want to post, I'll set you up with a personal 15% code for your followers and pay you 15% of every sale it drives. Either way you keep the product!
 
 Track codes in a note: creator name, code, sales. Pay via PayPal/Venmo weekly.
 
@@ -80,7 +80,7 @@ Track codes in a note: creator name, code, sales. Pay via PayPal/Venmo weekly.
 
 ## Launch message (friends/family/coworkers with pets)
 
-> Hey! Random but exciting — I just launched a small online pet store (pawhaven). It's 6 products I actually vetted: grooming gloves, slow feeders, that fur roller from TikTok, etc. Free shipping + 30-day guarantee on everything. If anything's useful for [pet's name], code LAUNCH10 gets you 10% off 🐾 [link]
+> Hey! Random but exciting — I just launched a small online pet store (tuftandtail). It's 6 products I actually vetted: grooming gloves, slow feeders, that fur roller from TikTok, etc. Free shipping + 30-day guarantee on everything. If anything's useful for [pet's name], code LAUNCH10 gets you 10% off 🐾 [link]
 > Zero pressure — but if you know another pet person, forwarding this would genuinely help a ton.
 
 (Create LAUNCH10 in Stripe: Dashboard → Product catalog → Coupons → 10% off, then tick "Allow promotion codes" on each Payment Link.)

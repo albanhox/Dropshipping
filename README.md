@@ -1,4 +1,4 @@
-# PawHaven — Automated Dropshipping Store
+# Tuft & Tail — Automated Dropshipping Store
 
 A complete, zero-monthly-cost dropshipping business in a repo: a live-deployable storefront plus the research and step-by-step playbooks to run it.
 

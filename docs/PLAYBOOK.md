@@ -34,7 +34,7 @@ Across the catalog, net profit runs **$8–$15/order**. So:
 ## Day 2 (≈2 hours): Order samples + set up channels
 
 1. **Order 1–2 samples** of your lead product (grooming glove and hair roller) from CJ to yourself (~$13). You need them in hand to film content. Until they arrive, film with any pet you can borrow + supplier videos for reference (don't repost supplier footage — TikTok suppresses recycled clips).
-2. Create accounts: **TikTok** (business), **Instagram** (Reels), **YouTube** (Shorts). Same handle everywhere, e.g. `@pawhavenshop`. Bio: one line + store link.
+2. Create accounts: **TikTok** (business), **Instagram** (Reels), **YouTube** (Shorts). Same handle everywhere, e.g. `@tuftandtail`. Bio: one line + store link.
 3. Create a **Facebook Marketplace** seller profile and join 3–5 local pet-owner Facebook groups.
 
 ## Days 2–7: The two-track sales engine

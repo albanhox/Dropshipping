@@ -1,4 +1,4 @@
-# Project Status — PawHaven Dropshipping Store
+# Project Status — Tuft & Tail Dropshipping Store
 
 _Last updated: 2026-07-21. This file lets any Claude session (or human) pick up the project instantly. Read this, then the other docs as needed._
 

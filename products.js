@@ -18,9 +18,9 @@
 // ============================================================
 
 const STORE = {
-  name: "PawHaven",
+  name: "Tuft & Tail",
   tagline: "Clever gear for happier pets",
-  supportEmail: "albanhox.info+pawhaven@gmail.com", // change me
+  supportEmail: "albanhox.info+tuftandtail@gmail.com", // change me
   currency: "$",
 };
 
