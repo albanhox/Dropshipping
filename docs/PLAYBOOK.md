@@ -9,9 +9,9 @@ Example: Grooming Glove at $17.99, free shipping.
 | Line | Amount |
 |---|---|
 | Revenue | $17.99 |
-| Product + US shipping from CJ | −$6.50 |
+| Product + US shipping from CJ (US warehouse) | −$5.49 |
 | Stripe fee (2.9% + $0.30) | −$0.82 |
-| **Net profit per order** | **≈ $10.67** |
+| **Net profit per order** | **≈ $11.68** |
 
 Across the catalog, net profit runs **$8–$15/order**. So:
 
