@@ -20,7 +20,7 @@
 const STORE = {
   name: "PawHaven",
   tagline: "Clever gear for happier pets",
-  supportEmail: "support@yourdomain.com", // change me
+  supportEmail: "albanhox.info+pawhaven@gmail.com", // change me
   currency: "$",
 };
 
