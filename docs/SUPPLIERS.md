@@ -7,7 +7,7 @@ Verified CJ Dropshipping listings (July 2026), saved in your CJ "My Products" fa
 
 | Product | CJ listing | Landed cost (US) | Warehouse | Delivery | Retail | Net after Stripe fee* |
 |---|---|---|---|---|---|---|
-| 5-Finger Grooming Glove | [listing](https://cjdropshipping.com/product/pet-hair-remover-mitt-pet-hair-remover-gloves-deshedding-brush-glove-for-dog-cat-rabbit-with-long-short-curly-hair-p-2503191148021601200.html) | $5.49 | **US (IN/NJ)** | 3–8 days | $17.99 | **$11.68** |
+| Pet Grooming Mitt | [listing](https://cjdropshipping.com/product/pet-hair-remover-mitt-pet-hair-remover-gloves-deshedding-brush-glove-for-dog-cat-rabbit-with-long-short-curly-hair-p-2503191148021601200.html) | $5.49 | **US (IN/NJ)** | 3–8 days | $17.99 | **$11.68** |
 | Self-Cleaning Slicker Brush | [listing](https://cjdropshipping.com/product/pet-self-cleaning-slicker-brush-p-AEF754AF-2F7F-424E-897C-2BF7DF141B30.html) | $10.79 | China | 5–11 days | $22.99 | $11.23 |
 | Anti-Gulp Slow Feeder Bowl | [listing](https://cjdropshipping.com/product/pet-dog-cat-slow-feeder-bowls-anti-choking-slow-feeder-dish-bowl-home-dog-eating-plate-anti-gulping-bowl-supplies-p-1653041912300969984.html) | $9.30 | China | 5–11 days | $19.99 | $9.81 |
 | Portable Dog Water Bottle | [listing](https://cjdropshipping.com/product/2-in-1-portable-dog-water-bottle-for-small-big-dogs-cat-outdoor-leak-proof-puppy-drinking-bowl-with-food-container-pets-feeder-pet-products-p-2504100230321610200.html) | $9.44 | China | 5–11 days | $19.99 | $9.67 |
