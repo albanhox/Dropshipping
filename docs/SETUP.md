@@ -4,10 +4,12 @@ The site is plain HTML/CSS/JS — no build step, no server, no database. Any sta
 
 ## Option A: GitHub Pages (recommended, free)
 
+A deploy workflow is already included (`.github/workflows/deploy-pages.yml`). GitHub only requires the repo owner to switch Pages on once:
+
 1. In this repo on GitHub: **Settings → Pages**.
-2. Source: **Deploy from a branch** → pick your branch → folder `/ (root)` → Save.
-3. In 1–2 minutes the store is live at `https://<username>.github.io/Dropshipping/`.
-4. Every `git push` redeploys automatically.
+2. Under **Build and deployment → Source**, choose **GitHub Actions**. That's it — no other options.
+3. Re-run the "Deploy store to GitHub Pages" workflow from the **Actions** tab (or just push any commit).
+4. In ~1 minute the store is live at `https://<username>.github.io/Dropshipping/`, and every future `git push` redeploys automatically.
 
 ## Option B: Vercel or Netlify (free, nicer URLs)
 
